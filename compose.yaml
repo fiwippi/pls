@@ -1,0 +1,10 @@
+services:
+  pls:
+    image: ghcr.io/fiwippi/pls:latest
+    container_name: pls
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./images:/data
+    command: data
